@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Анализ времени работы гаджетов для лабораторной работы №4.">
+    <title>Проверка автономности</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-line">
+            <span>power check</span>
+            <span>вариант 12</span>
+        </div>
+        <div class="header-content">
+            <p class="label">Тест автономности</p>
+            <h1>Сколько держат гаджеты</h1>
+            <p class="intro">Небольшой расчёт по времени работы шести устройств без подзарядки.</p>
+            <button id="runButton" type="button">Запустить ещё раз</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="source-block" aria-labelledby="sourceTitle">
+            <div class="section-title">
+                <p class="number">01</p>
+                <div>
+                    <h2 id="sourceTitle">Исходные данные</h2>
+                    <p>Время работы каждого устройства в часах</p>
+                </div>
+            </div>
+            <div class="values" id="values"></div>
+        </section>
+
+        <section class="results" aria-labelledby="resultsTitle">
+            <div class="section-title">
+                <p class="number">02</p>
+                <div>
+                    <h2 id="resultsTitle">Результаты</h2>
+                    <p id="greeting">Расчёт ещё не запускался</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <article class="stat-card main-stat">
+                    <p>Среднее время</p>
+                    <strong><span id="averageValue">0</span> ч</strong>
+                </article>
+                <article class="stat-card">
+                    <p>Максимум</p>
+                    <strong><span id="maximumValue">0</span> ч</strong>
+                </article>
+                <article class="stat-card">
+                    <p>Долгожители</p>
+                    <strong><span id="longLiversValue">0</span></strong>
+                </article>
+                <article class="stat-card">
+                    <p>Доля до 4 часов</p>
+                    <strong><span id="lowShareValue">0</span>%</strong>
+                </article>
+            </div>
+
+            <div class="details">
+                <div>
+                    <span>Суммарное время</span>
+                    <b id="sumValue">0 часов</b>
+                </div>
+                <div>
+                    <span>Больше 8 часов</span>
+                    <b id="longLiversList">—</b>
+                </div>
+                <div>
+                    <span>Не больше 4 часов</span>
+                    <b id="lowValuesList">—</b>
+                </div>
+            </div>
+
+            <p class="verdict" id="verdict"></p>
+        </section>
+    </main>
+
+    <footer>
+        <span>Лабораторная работа №4</span>
+        <span>2026</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
