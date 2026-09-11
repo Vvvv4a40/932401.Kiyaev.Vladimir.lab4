@@ -79,6 +79,7 @@ function runAnalysis() {
     console.log("Долгожители:", longLivers);
     console.log("Сумма:", sum);
     console.log("До 4 часов:", lowValues);
+    console.log("Количество устройств до 4 часов:", lowValues.length);
     console.log("Доля устройств до 4 часов:", `${lowShare}%`);
     console.log("Среднее время:", average);
 
